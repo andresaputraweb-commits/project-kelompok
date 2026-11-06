@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#e8f1e5">
+  <title>Tulis Pesan | Jejak Kebaikan</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/icon-web.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body class="form-page">
+
+  <header class="navbar">
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo-jejak-kebaikan.svg" alt="Logo Jejak Kebaikan">
+      <span>Jejak Kebaikan</span>
+    </a>
+
+    <a href="index.html" class="btn btn-outline back-button">← Kembali ke Beranda</a>
+  </header>
+
+  <main class="form-main">
+    <section class="form-intro">
+      <span class="eyebrow">🌿 RUANG BERBAGI KEBAIKAN</span>
+      <h1>Tuliskan Pesan <span>Kebaikanmu.</span></h1>
+      <p>
+        Setiap kata baik memiliki makna. Bagikan pesan positifmu
+        dan jadilah bagian dari perubahan yang lebih baik.
+      </p>
+    </section>
+
+    <section class="form-card">
+      <div class="form-card-heading">
+        <div class="form-heading-icon">💚</div>
+        <h2>Formulir Pesan Positif</h2>
+        <p>Isi formulir berikut untuk membagikan pesan kebaikan.</p>
+      </div>
+
+      <form id="goodnessForm">
+        <div class="form-group">
+          <label for="namaPengirim">Nama Pengirim</label>
+          <input
+            type="text"
+            id="namaPengirim"
+            name="namaPengirim"
+            placeholder="Masukkan nama lengkap kamu"
+            maxlength="50"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="kategoriPesan">Kategori Pesan</label>
+          <select id="kategoriPesan" name="kategoriPesan" required>
+            <option value="">Pilih kategori pesan</option>
+            <option value="Semangat">🔥 Semangat</option>
+            <option value="Terima Kasih">💚 Terima Kasih</option>
+            <option value="Harapan">🌈 Harapan</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="isiPesan">Isi Pesan</label>
+          <textarea
+            id="isiPesan"
+            name="isiPesan"
+            rows="6"
+            maxlength="500"
+            placeholder="Tuliskan pesan positif atau kata-kata inspiratifmu..."
+            required
+          ></textarea>
+          <small>Maksimal 500 karakter.</small>
+        </div>
+
+        <div id="formStatus" class="form-status" role="status"></div>
+
+        <button type="submit" id="submitButton" class="btn btn-primary submit-button">
+          💚 Kirim Pesan Kebaikan
+        </button>
+
+        <button type="reset" class="btn btn-outline reset-button">
+          Bersihkan Formulir
+        </button>
+      </form>
+
+      <div class="form-bottom-note">
+        🌱 Satu pesan baik dapat memberikan semangat bagi orang lain.
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer form-footer">
+    <div class="footer-inner">
+      <a href="index.html" class="footer-brand">
+        <img src="assets/images/logo-jejak-kebaikan.svg" alt="Logo Jejak Kebaikan">
+        <span>Jejak Kebaikan</span>
+      </a>
+      <p>Mulailah menyebarkan kebaikan dari hal sederhana.</p>
+      <p class="copyright">Copyright © 2026 Jejak Kebaikan.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
